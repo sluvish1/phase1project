@@ -1,0 +1,81 @@
+
+#bannerImg img {
+height: 350px;
+width: 1700px;
+padding-top: 10px;
+}
+
+/* Navagation*/
+.topNavigation{
+display: flex;
+justify-content: space-evenly;
+color: rgb(239, 121, 180);
+background-color: rgb(190, 240, 227);
+font-family: 'Lobster', cursive;
+}
+
+
+
+/* HairStyle Section*/
+.hairStyle{
+    padding-left: 15px;
+    color: rgb(239, 121, 180);
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.hairStyle button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(240, 190, 229);
+    color: palevioletred;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.hairStyle img{
+    width: 300px;
+    display: block;
+}
+
+
+.middleSection{
+    border: solid rgb(190, 240, 227)
+   
+}
+
+.middleSection .hairStyle{
+    border: solid rgb(190, 240, 227)
+}
+
+
+.middle h5{
+    background-color: black;
+    padding-top: 20%;
+ 
+}
+.left{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.right{
+    padding-right: 40px;
+}
+
+.bookingForm{
+    display: block;
+    width: 100%;
+    background-color: rgb(190, 240, 227);
+    color: palevioletred;
+    padding: 20px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
