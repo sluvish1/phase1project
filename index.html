@@ -23,19 +23,13 @@
 
       <!-- Navigation Menu -->
 
-      <div class="topNavigation">
-        <div class="navButton">
-          <h2>About Us</h2>
-          <!--will have contact info and all social media-->
-        </div>
+      <div id ="nav-btns-container">
+  
+        <button class="nav-button"> About Us </button>
 
-        <div class="navButton">
-          <h2>Review </h2>
-        </div>
+          <button class="nav-button"> Review </button>
 
-        <div class="navButton">
-          <h2>Login/Sign-up </h2>
-        </div>
+          <button class="nav-button"> Login </button>
       </div>
   </header>
   </div>
@@ -55,14 +49,15 @@
       <!--FORM-->
       <form id="upDoform" class="bookingForm">
         <h2>Book This Style</h2>
-        <div class="blanks" id="upDoBlanks">
-          <input id="upDofirstname" type="text" placeholder="Enter First Name">
+        <div id="upDoBlanks">
 
-          <input id="lastname" type="text" placeholder="Enter Last Name">
+          <input id="upDoInfoFirstName" class="info" type="text" placeholder="Enter First Name">
 
-          <input id="emailaddress" type="email" placeholder="Enter Email">
+          <input id="upDoInfoLastName" class="info" type="text" placeholder="Enter Last Name">
 
-          <input id="phonenumber" type="number" placeholder="Enter Phone Number">
+          <input id="upDoInfoEmail" class="info" type="email" placeholder="Enter Email">
+
+          <input id="upDoInfoPhoneNumber" class="info" type="number" placeholder="Enter Phone Number">
 
         </div>
         <input type="submit" class="bookingButton" id="upDoBookingButton">
@@ -79,7 +74,7 @@
          <!--FORM-->
       <form id="braidedPonytail" class="bookingForm">
         <h2>Book This Style</h2>
-        <div class="blanks" id="braidedPonytailBlanks">
+        <div id="braidedPonytailBlanks">
           <input id="firstname" type="text" placeholder="Enter First Name">
 
           <input id="lastname" type="text" placeholder="Enter Last Name">
@@ -103,7 +98,7 @@
          <!--FORM-->
       <form id="heartBunform" class="bookingForm">
         <h2>Book This Style</h2>
-        <div class="blanks" id="heartBunBlanks">
+        <div id="heartBunBlanks">
           <input id="firstname" type="text" placeholder="Enter First Name">
 
           <input id="lastname" type="text" placeholder="Enter Last Name">
@@ -128,7 +123,7 @@
       <form id="pigtailsform" class="bookingForm">
         <h2>Book This Style</h2>
         
-        <div class="blanks" id="pigTailsBlank">
+        <div id="pigTailsBlank">
           <input id="firstname" type="text" placeholder="Enter First Name">
 
           <input id="lastname" type="text" placeholder="Enter Last Name">

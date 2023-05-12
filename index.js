@@ -7,11 +7,5 @@ once thats done user must click the 'book my appt button` that will have a pop
 up of an overveiw of the booking details, once the user comfimers everything user must click submit 
 */
 
-//adding click events to book button
-document.addEventListener(`DOMContentLoaded`, () => {
-    let allForms = document.querySelectorAll(`form`).forEach((singleForm) => {
-        return singleForm.addEventListener(`submit`, (e) => {
-            
-        })
-    })
-})
+
+    

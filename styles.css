@@ -6,12 +6,20 @@ padding-top: 10px;
 }
 
 /* Navagation*/
-.topNavigation{
+#nav-btns-container{
 display: flex;
 justify-content: space-evenly;
-color: rgb(239, 121, 180);
+
 background-color: rgb(190, 240, 227);
-font-family: 'Lobster', cursive;
+
+}
+
+.nav-button{
+    font-family: 'Lobster', cursive;
+    background-color: rgb(190, 240, 227);
+    color: rgb(239, 121, 180);
+    border: none;
+    font-size: 30px;
 }
 
 
