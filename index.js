@@ -8,35 +8,64 @@ up of an overveiw of the booking details, once the user comfimers everything use
 */
 
 //creates&adds the Event-Listener
-addEventListener(`DOMContentLoaded`,()=>{
-    
-   document.getElementById(`about-btn`).addEventListener(`click`,(e)=>{
-    alert(`i was clicked`)
-    //info popup
-   });
+addEventListener(`DOMContentLoaded`, () => {
 
-   document.getElementById(`review-btn`).addEventListener(`click`,(e)=>{
-    alert(`i was clicked`)
-    //review subbmitter pops up
-   });
+    document.getElementById(`about-btn`).addEventListener(`click`, (e) => {
 
-    document.getElementById(`login-btn`).addEventListener(`click`,(e)=>{
+        alert(`i was clicked`)
+        //info popup
+    });
+
+    document.getElementById(`review-btn`).addEventListener(`click`, (e) => {
+        alert(`i was clicked`)
+        //review subbmitter pops up
+    });
+
+    //when button is clicked opensMemberForm function will run
+    const membersBtn = document.getElementById(`members-btn`).addEventListener(`click`, (e) => {
+
+        // e.preventDefault()
+        //e.target.value
+        opensMemberSignup()
+    });
+    const modal = document.getElementById("modal");
+    const modalContent = document.querySelector(".modal-content")
+    const closeModalButton = document.getElementsByClassName("close")[0];
+    closeModalButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+    //Member Form Content
+    function opensMemberSignup() {
+        modal.style.display = "block";
+        const submitBtn = document.createElement(`input`)
+        submitBtn.type = "submit"
+        submitBtn.value = "create account"
        
         const memberForm = document.createElement(`form`)
-        const memberInput = document.createElement(`input`)
-       
-     
-        memberForm.append(memberInput)
-        e.target.memberForm.value
+        const emailInput = document.createElement(`input`)
+        emailInput.style.display = "block"
+        emailInput.type = ("text")
+        emailInput.style.marginBottom = "10px"
+        emailInput.placeholder = "email"
+        const passwordInput = document.createElement(`input`)
+        passwordInput.type = ('text')
+        passwordInput.style.display = "block"
+        passwordInput.placeholder = "password   "
+        memberForm.append(emailInput, passwordInput, submitBtn)
+        modalContent.append(memberForm)
+        //console.log(memberForm)
+        // let formm;
+        //const memberForm = document.createElement(`form`).id = `member-form`
+        //const memberInfoSignIn = document.createElement(`input-type`).append(memberInfoSignIn);
+        memberForm.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            console.log(`clicked`)
+        })
 
-       
-       console.log(memberForm)
-    //signup and logins
- });
+        //memberInfoSignIn.innerText = document.querySelector(`member-form`
+    }
 
-//adding events listenters to hairstyle scetion
-console.log(document.getElementById(`updo-form`))
-
+   
 })
 
 
@@ -46,12 +75,12 @@ console.log(document.getElementById(`updo-form`))
 //annoymous function passes in the navbtn objs and does a for-each loop
 
 
- /* (navbtn)=> navbtn.forEach(btn => {
-    addEventListener(`click`,(btn)=>{
-        alert(b`hi`)
-    })
-  });
+/* (navbtn)=> navbtn.forEach(btn => {
+   addEventListener(`click`,(btn)=>{
+       alert(b`hi`)
+   })
+ });
 */
-    
+
 
 
