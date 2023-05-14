@@ -5,34 +5,22 @@
   <title>StampedBySabrae</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
   <header>
-    <!--I want to add a coupon popup alert thatll that 15% off hairstyles
-      it'll have a code that can be copied by clicking on a button and the user
-      can paste it into the form-->
     <div id="main-nav">
       <!--Banner Img-->
       <div id="bannerImg">
         <img src="mekhiWebPics/mekhiBanner.jpeg" alt="Banner">
       </div>
-
-
-      <!-- Navigation Menu -->
-
       <div id="coupond-container">
- <!-- 
+        <!-- 
         <button class="nav-button" id="about-btn"> About Us </button>
-
      <button class="nav-button" id="review-btn"> Review </button>-->
-
         <button class="nav-button" id="coupond-btn">Coupond Codes</button>
       </div>
-
-<!--this is the login form dropdown thatll show when the member btn is clicked
+      <!--this is the login form dropdown thatll show when the member btn is clicked
       <div id="modal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -41,122 +29,93 @@
       </div>
       -->
   </header>
-
-
-
-
   <!--Hair styles Container-->
   <div class="middleSection">
-
     <!--UPDO SECTION-->
     <div class="hairStyle">
       <!--Left-->
       <div class="left">
         <h3>Updo</h3>
+        <p>$130.00</p>
         <img src="mekhiWebPics/IMG_7983.jpg" alt="UpDo" />
       </div>
       <!--FORM-->
-      <form id="upDoform" class="bookingForm">
+      <form id="updoForm" class="bookingForm">
         <h2>Book This Style</h2>
-        <div id="upDoBlanks">
-
-          <input id="upDoInfoFirstName" class="info" type="text" placeholder="Enter First Name">
-
-          <input id="upDoInfoLastName" class="info" type="text" placeholder="Enter Last Name">
-
-          <input id="upDoInfoEmail" class="info" type="email" placeholder="Enter Email">
-
-          <input id="upDoInfoPhoneNumber" class="info" type="number" placeholder="Enter Phone Number">
-
-        </div>
-        <input type="submit" class="bookingButton" id="upDoBookingButton">
+        <div id="updo-form-userinputs">
+        <input id="updo-info-first-name" type="text" placeholder="Enter First Name" required>
+        <input id="updo-info-last-name" type="text" placeholder="Enter Last Name" required>
+        <input id="updo-info-email" type="email" placeholder="Enter Email" required>
+        <input id="updo-info-phone-number" type="number" placeholder="Enter Phone Number" required>
+        <input id="upodo-coupond-code" type="text" placeholder="Coupond Code">
+        <input id="updo-formdate" type="date" required>
+        <input type="submit" class="bookingButton" id="updo-booking-button" value="Book">
+      </div>
       </form>
     </div>
-
     <!--BRAIDED PONYTAIL SECTION-->
     <div class="hairStyle">
       <!--Left-->
       <div class="left">
         <h3>Braided PonyTail</h3>
+        <p>$110.00</p>
         <img src="mekhiWebPics/IMG_7986.jpg" alt="BraidedPonytail">
       </div>
       <!--FORM-->
-      <form id="braidedPonytail" class="bookingForm">
+      <form id="braidedPonytailForm" class="bookingForm">
         <h2>Book This Style</h2>
-        <div id="braidedPonytailBlanks">
-          <input id="firstname" type="text" placeholder="Enter First Name">
-
-          <input id="lastname" type="text" placeholder="Enter Last Name">
-
-          <input id="emailaddress" type="email" placeholder="Enter Email">
-
-          <input id="phonenumber" type="number" placeholder="Enter Phone Number">
-
-        </div>
-        <input type="submit" class="bookingButton" id="braidedPonyTailBookingButton">
+        <input id="braided-ponytail-form-first-name" type="text" placeholder="Enter First Name" required>
+        <input id="braidedonytailF-form-last-name" type="text" placeholder="Enter Last Name" required>
+        <input id="braided-ponytail-form-email-address" type="email" placeholder="Enter Email" required>
+        <input id="braidedponytail-form-phone-number" type="number" placeholder="Enter Phone Number" required>
+        <input id="braidedpony-coupond-code" type="text" placeholder="Coupond Code">
+        <input id="braidedpony-form-date" type="date" required>
+        <input type="submit" class="bookingButton" id="braided-ponytail-booking-button" value="Book">
       </form>
     </div>
-
     <!--HEARTBUN SECTION-->
     <div class="hairStyle">
       <!--Left-->
       <div class="left">
         <h3>Heart Bun</h3>
+        <p>$90.00</p>
         <img src="mekhiWebPics/heartBun.jpeg" alt="HeartBun">
       </div>
       <!--FORM-->
-      <form id="heartBunform" class="bookingForm">
+      <form id="heart-bun-form" class="bookingForm">
         <h2>Book This Style</h2>
-        <div id="heartBunBlanks">
-          <input id="firstname" type="text" placeholder="Enter First Name">
-
-          <input id="lastname" type="text" placeholder="Enter Last Name">
-
-          <input id="emailaddress" type="email" placeholder="Enter Email">
-
-          <input id="phonenumber" type="number" placeholder="Enter Phone Number">
-          <input type="date" id="birthday" name="birthday">
-
-        </div>
-        <input type="submit" class="bookingButton" id="heartBunBookingButton">
+        <input id="heart-bun-form-first-name" type="text" placeholder="Enter First Name" required>
+        <input id="heart-bun-form-last-name" type="text" placeholder="Enter Last Name" required>
+        <input id="heart-bun-form-email-address" type="email" placeholder="Enter Email" required>
+        <input id="heart-bun-form-phone-number" type="number" placeholder="Enter Phone Number" required>
+        <input id="heart-bun-coupond-code" type="text" placeholder="Coupond Code">
+        <input id="heart-bun-form-date" type="date" required>
+        <input type="submit" class="bookingButton" id="heart-bun-booking-button" value="Book">
       </form>
     </div>
-
     <!--PIGTAILS SECTION-->
     <div class="hairStyle">
       <!--Left-->
       <div class="left">
         <h3>PigTails</h3>
+        <p>$100.00</p>
         <img src="mekhiWebPics/pigtails.jpeg" alt="Pigtails">
       </div>
       <!--FORM-->
-      <form id="pigtailsform" class="bookingForm">
+      <form id="pigtailsForm" class="bookingForm">
         <h2>Book This Style</h2>
-
-        <div id="pigTailsBlank">
-          <input id="firstname" type="text" placeholder="Enter First Name">
-
-          <input id="lastname" type="text" placeholder="Enter Last Name">
-
-          <input id="emailaddress" type="email" placeholder="Enter Email">
-
-          <input id="phonenumber" type="number" placeholder="Enter Phone Number">
-        </div>
-        <input type="submit" class="bookingButton" id="pigTailsBookingButton">
+        <input id="pigtailsFormfirstname" type="text" placeholder="Enter First Name" required>
+        <input id="pigtailsFormlastname" type="text" placeholder="Enter Last Name" required>
+        <input id="pigtailsFormemailaddress" type="email" placeholder="Enter Email" required>
+        <input id="phonenumber" type="number" placeholder="Enter Phone Number" required>
+        <input id="coupondcode" type="text" placeholder="Coupond Code">
+        <input id="pigtailsFormdate" type="date" required>
+        <input type="submit" class="bookingButton" id="pigTailsBookingButton" value="Book">
       </form>
       <div class="calendar"></div>
-
     </div>
   </div>
-  <footer>
-    <p>social media</p>
-  </footer>
   <script src="index.js"></script>
 </body>
 
 </html>
-
-<!--
-
-  
--->

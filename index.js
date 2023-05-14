@@ -1,39 +1,48 @@
-/*when the booking button is clicked a form will pop up for the user to
-pick a day and time of the appointment once appt is set user will then => click the
-next button so they may pick a payment option(in person cash or cashapp payment) 
-dendending on which box the user clicks "in person" payments will ask user how much cash will they be bring so that
-i will have their change will have a box for ppl who will bring exact amount, will have a blank for couponds codes will 
-once thats done user must click the 'book my appt button` that will have a pop 
-up of an overveiw of the booking details, once the user comfimers everything user must click submit 
-*/
-
-//Adds Event-Listener to the DOC
+//DOM
 addEventListener(`DOMContentLoaded`, () => {
 /*
     document.getElementById(`about-btn`).addEventListener(`click`, (e) => {
         alert(`i was clicked`)
     });
-
     document.getElementById(`review-btn`).addEventListener(`click`, (e) => {
         alert(`i was clicked`)
         //review subbmitter pops up
     });
     */
-
-
-    /* STEP 1: Will add a EvevntListenter thatll listen for the  button to be clicked , 
-    once clicked itll run the opensMemberForm function*/
-    const coupondAlertMsg = document.createElement(`div`);
-    const childEle = document.createElement(`p`).id=`hello`
-    const parentEle = document.createElement(`h2`)
-   coupondAlertMsg =  coupondAlertMsg.append(childEle,parentEle)
-   
-   
-
-    const coupondsBtn = document.getElementById(`coupond-btn`).addEventListener(`click`, (e) => {
-       alert()
+    const updoForm = document.getElementById(`updoForm`);
+    updoForm.addEventListener("submit",function(e){
+       e.preventDefault()
+        const upDoInfoFirstName = document.getElementById("updo-info-first-name").value
+        const upDoInfoLastName = document.getElementById("updo-info-last-name").value
+        const upDoInfoEmail = document.getElementById("updo-info-email").value;
+        const upDoInfoPhoneNum = document.getElementById("updo-info-phone-number").value
+        const updoCoupondCodeEntered = document.getElementById("updo-coupond-code").value
+        const hairApptDate = document.getElementById("updo-formdate").value 
     });
-    
+
+
+    const heartBunform = document.getElementById();
+    updoForm.addEventListener("submit",function(e){
+       e.preventDefault()
+        const braidedponyInfoFirstName = document.getElementById("braided-ponytail-form-first-name").value
+        const braidedponyInfoLastName = document.getElementById("braidedonytailF-form-last-name").value
+        const braidedponyInfoEmail = document.getElementById("braided-ponytail-form-email-address").value;
+        const braidedponyInfoPhoneNum = document.getElementById("braidedponytail-form-phone-number").value
+        const braidedponyCoupondCodeEntered = document.getElementById("braidedpony-coupond-code").value
+        const braidedponyHairApptDate = document.getElementById("braidedpony-form-date").value 
+    })
+
+
+    const braidedPonytailForm = document.getElementById();
+    updoForm.addEventListener("submit",function(e){
+       e.preventDefault()
+        const braidedponyInfoFirstName = document.getElementById("braided-ponytail-form-first-name").value
+        const braidedponyInfoLastName = document.getElementById("braidedonytailF-form-last-name").value
+        const braidedponyInfoEmail = document.getElementById("braided-ponytail-form-email-address").value;
+        const braidedponyInfoPhoneNum = document.getElementById("braidedponytail-form-phone-number").value
+        const braidedponyCoupondCodeEntered = document.getElementById("braidedpony-coupond-code").value
+        const braidedponyHairApptDate = document.getElementById("braidedpony-form-date").value 
+    })
     
 })
 
