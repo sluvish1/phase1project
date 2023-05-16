@@ -9,42 +9,83 @@ addEventListener(`DOMContentLoaded`, () => {
         //review subbmitter pops up
     });
     */
+    const coupon = document.getElementById("coupon-btn")
+        coupon.addEventListener("click",(e)=>{
+            let code = "TAKE$25"
+            alert("Use code TAKE$25 for $25 off!")
+            e.preventDefault()
+        })
+
+    
+
+
     const updoForm = document.getElementById(`updoForm`);
+
     updoForm.addEventListener("submit",function(e){
        e.preventDefault()
+
         const upDoInfoFirstName = document.getElementById("updo-info-first-name").value
         const upDoInfoLastName = document.getElementById("updo-info-last-name").value
         const upDoInfoEmail = document.getElementById("updo-info-email").value;
         const upDoInfoPhoneNum = document.getElementById("updo-info-phone-number").value
-        const updoCoupondCodeEntered = document.getElementById("updo-coupond-code").value
-        const hairApptDate = document.getElementById("updo-formdate").value 
+        const updoCoupondCodeEntered = document.getElementById("upodo-coupond-code").value
+        const updoHairApptDate = document.getElementById("updo-formdate").value 
+
+      let newAppt = {
+            "firstName" : upDoInfoFirstName,
+            "lastName": upDoInfoLastName,
+            "email": upDoInfoEmail,
+            "phoneNum": upDoInfoPhoneNum,
+            "couponCode": updoCoupondCodeEntered,
+            "updoDate" : updoHairApptDate,
+         }
+         console.log(newAppt)
+         fetch("http://localhost:3004/updoAptt", {
+            method: "POST", // or 'PUT'
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newAppt),
+          })
+    }
+
+    
+    );
+
+    const braidedPonyForm = document.getElementById("braided-ponytail-form");
+    updoForm.addEventListener("submit",function(e){
+       e.preventDefault()
+        const braidedponyInfoFirstName = document.getElementById("braided-ponytail-form-first-name").value
+        const braidedponyInfoLastName = document.getElementById("braidedonytailF-form-last-name").value
+        const braidedponyInfoEmail = document.getElementById("braided-ponytail-form-email-address").value;
+        const braidedponyInfoPhoneNum = document.getElementById("braidedponytail-form-phone-number").value
+        const braidedponyCoupondCodeEntered = document.getElementById("braidedpony-coupond-code").value
+        const braidedponyHairApptDate = document.getElementById("braidedpony-form-date").value 
     });
 
-
-    const heartBunform = document.getElementById();
+    const heartBunForm = document.getElementById("heart-bun-form");
     updoForm.addEventListener("submit",function(e){
        e.preventDefault()
-        const braidedponyInfoFirstName = document.getElementById("braided-ponytail-form-first-name").value
-        const braidedponyInfoLastName = document.getElementById("braidedonytailF-form-last-name").value
-        const braidedponyInfoEmail = document.getElementById("braided-ponytail-form-email-address").value;
-        const braidedponyInfoPhoneNum = document.getElementById("braidedponytail-form-phone-number").value
-        const braidedponyCoupondCodeEntered = document.getElementById("braidedpony-coupond-code").value
-        const braidedponyHairApptDate = document.getElementById("braidedpony-form-date").value 
-    })
+        const braidedponyInfoFirstName = document.getElementById("heart-bun-form-first-name").value
+        const braidedponyInfoLastName = document.getElementById("heart-bun-form-last-name").value
+        const braidedponyInfoEmail = document.getElementById("heart-bun-form-email-address").value;
+        const braidedponyInfoPhoneNum = document.getElementById("heart-bun-form-phone-number").value
+        const braidedponyCoupondCodeEntered = document.getElementById("heart-bun-coupond-code").value
+        const braidedponyHairApptDate = document.getElementById("heart-bun-form-date").value 
+    });
 
-
-    const braidedPonytailForm = document.getElementById();
+    const pigtailsForm = document.getElementById("pigtails-form");
     updoForm.addEventListener("submit",function(e){
        e.preventDefault()
-        const braidedponyInfoFirstName = document.getElementById("braided-ponytail-form-first-name").value
-        const braidedponyInfoLastName = document.getElementById("braidedonytailF-form-last-name").value
-        const braidedponyInfoEmail = document.getElementById("braided-ponytail-form-email-address").value;
-        const braidedponyInfoPhoneNum = document.getElementById("braidedponytail-form-phone-number").value
-        const braidedponyCoupondCodeEntered = document.getElementById("braidedpony-coupond-code").value
-        const braidedponyHairApptDate = document.getElementById("braidedpony-form-date").value 
-    })
-    
+        const braidedponyInfoFirstName = document.getElementById("pigtails-form-first-name").value
+        const braidedponyInfoLastName = document.getElementById("pigtails-formlast-name").value
+        const braidedponyInfoEmail = document.getElementById("pigtails-form-email-address").value;
+        const braidedponyInfoPhoneNum = document.getElementById("pigtails-form-email-address").value
+        const braidedponyCoupondCodeEntered = document.getElementById("pigtails-form-coupond-code").value
+        const braidedponyHairApptDate = document.getElementById("pigtails-form-date").value 
+    });
 })
+
 
 
     /* const modal = document.getElementById("modal");

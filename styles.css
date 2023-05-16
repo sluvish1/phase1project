@@ -6,9 +6,9 @@ padding-top: 10px;
 }
 
 /* Navagation*/
-#coupond-container{
+#coupon-container{
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
 
 background-color: rgb(190, 240, 227);
 

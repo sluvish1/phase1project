@@ -1,0 +1,22 @@
+{
+  "updoAptt": [
+    {
+      "firstName": "vaschell",
+      "lastName": "mckenzie",
+      "email": "mvaschell@gmail.com",
+      "phoneNum": "888-888-8888",
+      "couponCode": "TAKE$25",
+      "updoDate": "May 15, 2023",
+      "id": 1
+    },
+    {
+      "firstName": "Vaschell",
+      "lastName": "Mckenzie",
+      "email": "vaschellmckenzielove@gmail.com",
+      "phoneNum": "66666666",
+      "couponCode": "",
+      "updoDate": "2023-05-15",
+      "id": 2
+    }
+  ]
+}
