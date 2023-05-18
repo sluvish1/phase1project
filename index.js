@@ -2,11 +2,58 @@
 addEventListener(`DOMContentLoaded`, () => {
     const couponBtn = document.getElementById("coupon-btn").addEventListener("click", couponBtnWasClicked)
 
-    function couponBtnWasClicked(e){
-      alert("Use TAKE25 for $25 off!")
+    function couponBtnWasClicked(e) {
+        alert("Use TAKE25 for $25 off!")
     }
+
+      function formWasSubmitted(e){
+            e.preventDefault()
+            const submittedForm = e.target;
+
+          console.log(`is this our input`, e.target.querySelector('.first-name'));
+           let firstName = e.target.querySelector(".first-name").value
+           let lastName = e.target.querySelector(".last-name").value
+           let emailInfo = e.target.querySelector(".email").value
+           let phoneNum =e.target.querySelector(".phone-num").value
+           let discountCode = e.target.querySelector(".discount-code").value
+           let aptDate = e.target.querySelector(".apt-date").value
+        
+           let userInput ={
+            "firstname" : firstName,
+            "lastName" : lastName,
+            "email" : emailInfo,
+            "phonenumber" : phoneNum,
+            "discount" : discountCode,
+            "aptdate" : aptDate
+           }
+           console.log(userInput)
+     }
+
+    let allforms = document.getElementsByTagName("form") //grabs all of the forms ofn the webpage
+     allforms = Array.from(allforms)//turns everything into an array
+    allforms.forEach(eachForm => {
+        eachForm.addEventListener("submit",formWasSubmitted)
+    });
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     const updoForm = document.getElementById(`updoForm`).addEventListener("submit", updoFormWasSubmitted)
     function updoFormWasSubmitted(e) {
+        e.preventDefault()
+
         const upDoInfoFirstName = document.getElementById("updo-info-first-name").value
         const upDoInfoLastName = document.getElementById("updo-info-last-name").value
         const upDoInfoEmail = document.getElementById("updo-info-email").value;
@@ -14,7 +61,6 @@ addEventListener(`DOMContentLoaded`, () => {
         const updoCoupondCodeEntered = document.getElementById("upodo-coupond-code").value
         const updoHairApptDate = document.getElementById("updo-formdate").value
 
-        e.preventDefault()
         let newAppt = {
             "firstName": upDoInfoFirstName,
             "lastName": upDoInfoLastName,
@@ -23,10 +69,11 @@ addEventListener(`DOMContentLoaded`, () => {
             "couponCode": updoCoupondCodeEntered,
             "updoDate": updoHairApptDate,
         }
-        
+
         if (newAppt.couponCode !== "TAKE25") {
             alert("Incorrect Coupon Code")
         }
+        // console.log(newAppt)
         fetch("http://localhost:3004/updoAptt", {
             method: "POST", // or 'PUT'
             headers: {
@@ -59,7 +106,7 @@ addEventListener(`DOMContentLoaded`, () => {
             alert("Incorrect Coupon Code")
         }
 
-        console.log(newAppt)
+       // console.log(newAppt)
         fetch("http://localhost:3004/braidPonyAptt", {
             method: "POST", // or 'PUT'
             headers: {
@@ -93,7 +140,7 @@ addEventListener(`DOMContentLoaded`, () => {
         if(newAppt.couponCode !== "TAKE25"){
             alert("Incorrect Coupon Code")
         }
-        console.log(newAppt)
+        //console.log(newAppt)
         fetch("http://localhost:3004/heartBunAptt", {
             method: "POST", // or 'PUT'
             headers: {
@@ -122,7 +169,7 @@ addEventListener(`DOMContentLoaded`, () => {
             "couponCode": pigtailsCoupondCodeEntered,
             "pigTailDate": pigtailsHairApptDate,
         }
-        console.log(newAppt)
+        //console.log(newAppt)
         fetch("http://localhost:3004/pigTailsAptt", {
             method: "POST", // or 'PUT'
             headers: {
@@ -132,4 +179,6 @@ addEventListener(`DOMContentLoaded`, () => {
         })
 
     }
+    */
 })
+
