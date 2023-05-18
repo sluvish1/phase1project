@@ -1,34 +1,10 @@
 //DOM
 addEventListener(`DOMContentLoaded`, () => {
     const couponBtn = document.getElementById("coupon-btn").addEventListener("click", couponBtnWasClicked)
-    function couponBtnWasClicked(e) {
-        e.preventDefault()
-        alert("Use code 'TAKE20' for $25 off!")
 
+    function couponBtnWasClicked(e){
+      alert("Use TAKE25 for $25 off!")
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     const updoForm = document.getElementById(`updoForm`).addEventListener("submit", updoFormWasSubmitted)
     function updoFormWasSubmitted(e) {
         const upDoInfoFirstName = document.getElementById("updo-info-first-name").value
@@ -47,7 +23,10 @@ addEventListener(`DOMContentLoaded`, () => {
             "couponCode": updoCoupondCodeEntered,
             "updoDate": updoHairApptDate,
         }
-        console.log(newAppt)
+        
+        if (newAppt.couponCode !== "TAKE25") {
+            alert("Incorrect Coupon Code")
+        }
         fetch("http://localhost:3004/updoAptt", {
             method: "POST", // or 'PUT'
             headers: {
@@ -73,11 +52,11 @@ addEventListener(`DOMContentLoaded`, () => {
             "email": braidedponyInfoEmail,
             "phoneNum": braidedponyInfoPhoneNum,
             "couponCode": braidedponyCoupondCodeEntered,
-            "updoDate": braidedponyHairApptDate,
+            "braidedPonyDate": braidedponyHairApptDate,
         }
-        let discountCode = "TAKE25"
-        if (braidedponyCoupondCodeEntered.value !== discountCode) {
-            alert("Inncorect coupond")
+
+        if (newAppt.couponCode !== "TAKE25") {
+            alert("Incorrect Coupon Code")
         }
 
         console.log(newAppt)
@@ -109,14 +88,24 @@ addEventListener(`DOMContentLoaded`, () => {
             "email": heartBunInfoEmail,
             "phoneNum": heartBunInfoPhoneNum,
             "couponCode": heartBunCoupondCodeEntered,
-            "updoDate": heartBunHairApptDate,
+            "heartBunDate": heartBunHairApptDate,
         }
-
+        if(newAppt.couponCode !== "TAKE25"){
+            alert("Incorrect Coupon Code")
+        }
+        console.log(newAppt)
+        fetch("http://localhost:3004/heartBunAptt", {
+            method: "POST", // or 'PUT'
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newAppt),
+        })
     }
 
-    const pigtailsForm = document.getElementById("pigtails-form").addEventListener("submit",pigtailsFormWasSubbmitted)
+    const pigtailsForm = document.getElementById("pigtails-form").addEventListener("submit", pigtailsFormWasSubbmitted)
 
-    function pigtailsFormWasSubbmitted(e){
+    function pigtailsFormWasSubbmitted(e) {
         e.preventDefault()
         const pigtailsInfoFirstName = document.getElementById("pigtails-form-first-name").value
         const pigtailsInfoLastName = document.getElementById("pigtails-formlast-name").value
@@ -124,5 +113,23 @@ addEventListener(`DOMContentLoaded`, () => {
         const pigtailsInfoPhoneNum = document.getElementById("pigtails-form-email-address").value
         const pigtailsCoupondCodeEntered = document.getElementById("pigtails-form-coupond-code").value
         const pigtailsHairApptDate = document.getElementById("pigtails-form-date").value
+
+        let newAppt = {
+            "firstName": pigtailsInfoFirstName,
+            "lastName": pigtailsInfoLastName,
+            "email": pigtailsInfoEmail,
+            "phoneNum": pigtailsInfoPhoneNum,
+            "couponCode": pigtailsCoupondCodeEntered,
+            "pigTailDate": pigtailsHairApptDate,
+        }
+        console.log(newAppt)
+        fetch("http://localhost:3004/pigTailsAptt", {
+            method: "POST", // or 'PUT'
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newAppt),
+        })
+
     }
 })
