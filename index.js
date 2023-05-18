@@ -5,6 +5,12 @@ addEventListener(`DOMContentLoaded`, () => {
     function couponBtnWasClicked(e) {
         alert("Use TAKE25 for $25 off!")
     };
+        function aptConfBooking(oneForm){
+
+        }
+
+
+
 
       function formWasSubmitted(e){
             e.preventDefault()
@@ -34,29 +40,27 @@ addEventListener(`DOMContentLoaded`, () => {
             -if phone number enter isnt 10 number form shouldnt submit, phone num is as string
             -if atp date sectected is passed but doesnt allow users to book more than a week at a timw
             */
-           
-           
-           //take the user input
-           fetch("http://localhost:3004/userInput", {
-            method: "POST", 
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userInput),
-        })
-     }
 
+           //take the user input
+      
+     }
+     
     let allforms = document.getElementsByTagName("form") //grabs all of the forms ofn the webpage
      allforms = Array.from(allforms)//turns everything into an array
     allforms.forEach(eachForm => {
         eachForm.addEventListener("submit",formWasSubmitted)
     });
     
-
-   
-
-
-
+    function bookingAtps(){
+        fetch("http://localhost:3004/userInput", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userInput),
+        }).then(res => res.json())
+       
+    }
 
 
 
