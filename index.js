@@ -26,8 +26,17 @@ addEventListener(`DOMContentLoaded`, () => {
             "discount" : discountCode,
             "aptdate" : aptDate
            }
+           if(userInput.discount !== "TAKE25"){
+            alert("Incorrect Coupon Code Was Entered")
+        }
+            /*How do I prevent the form from subbiting when user enters wrong information?
+            -if dicount code isnt the EXACT same as the one proved it should alert the user
+            -if phone number enter isnt 10 number form shouldnt submit, phone num is as string
+            -if atp date sectected is passed but doesnt allow users to book more than a week at a timw
+            */
            
-           //gets the user input
+           
+           //take the user input
            fetch("http://localhost:3004/userInput", {
             method: "POST", 
             headers: {
