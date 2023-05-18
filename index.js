@@ -4,13 +4,13 @@ addEventListener(`DOMContentLoaded`, () => {
 
     function couponBtnWasClicked(e) {
         alert("Use TAKE25 for $25 off!")
-    }
+    };
 
       function formWasSubmitted(e){
             e.preventDefault()
             const submittedForm = e.target;
 
-          console.log(`is this our input`, e.target.querySelector('.first-name'));
+          //console.log(`is this our input`, e.target.querySelector('.first-name'));
            let firstName = e.target.querySelector(".first-name").value
            let lastName = e.target.querySelector(".last-name").value
            let emailInfo = e.target.querySelector(".email").value
@@ -26,10 +26,15 @@ addEventListener(`DOMContentLoaded`, () => {
             "discount" : discountCode,
             "aptdate" : aptDate
            }
-           console.log(userInput)
-           if(userInput.couponCode !== "TAKE25"){
-            alert("Incorrect Coupon Code")
-        }
+           
+           //gets the user input
+           fetch("http://localhost:3004/userInput", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userInput),
+        })
      }
 
     let allforms = document.getElementsByTagName("form") //grabs all of the forms ofn the webpage
@@ -52,7 +57,7 @@ addEventListener(`DOMContentLoaded`, () => {
 
 
 
-    /*
+    /* OLD CODE
     const updoForm = document.getElementById(`updoForm`).addEventListener("submit", updoFormWasSubmitted)
     function updoFormWasSubmitted(e) {
         e.preventDefault()

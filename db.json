@@ -1,5 +1,5 @@
 {
-  "updoAptt": [
+  "userInput": [
     {
       "firstName": "vaschell",
       "lastName": "mckenzie",
@@ -10,189 +10,31 @@
       "id": 1
     },
     {
-      "firstName": "Vaschell",
+      "firstname": "Vaschell",
       "lastName": "Mckenzie",
       "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "66666666",
-      "couponCode": "",
-      "updoDate": "2023-05-15",
+      "phonenumber": "456789",
+      "discount": "ghjkl;",
+      "aptdate": "2023-05-18",
       "id": 2
     },
     {
-      "firstName": "Vaschell",
+      "firstname": "Vaschell",
       "lastName": "Mckenzie",
       "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "",
-      "updoDate": "2023-05-16",
+      "phonenumber": "4567890",
+      "discount": "dfghjml",
+      "aptdate": "2023-05-19",
       "id": 3
     },
     {
-      "firstName": "Vaschell",
+      "firstname": "Vaschell",
       "lastName": "Mckenzie",
       "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "",
-      "updoDate": "2023-05-09",
+      "phonenumber": "456789",
+      "discount": "ghjkl",
+      "aptdate": "2023-05-18",
       "id": 4
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8577535",
-      "couponCode": "lol",
-      "updoDate": "2023-05-18",
-      "id": 5
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8577535",
-      "couponCode": "lol",
-      "updoDate": "2023-05-18",
-      "id": 6
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "phoneNum": "8636516752",
-      "couponCode": "howdey10",
-      "updoDate": "2023-05-17",
-      "id": 7
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "torso",
-      "updoDate": "2023-05-17",
-      "id": 8
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "tyhb",
-      "updoDate": "2023-05-09",
-      "id": 9
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "phoneNum": "",
-      "couponCode": "",
-      "updoDate": "",
-      "id": 10
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "kgvhbjkl",
-      "updoDate": "2023-05-19",
-      "id": 11
-    },
-    {
-      "firstName": "Cdai Santana🥵🎯",
-      "lastName": "mck",
-      "email": "rgfht@gmail.com",
-      "phoneNum": "3059280173",
-      "couponCode": "gym",
-      "updoDate": "2023-05-04",
-      "id": 12
-    },
-    {
-      "firstName": "Cdai Santana🥵🎯",
-      "lastName": "mck",
-      "email": "rgfht@gmail.com",
-      "phoneNum": "3059280173",
-      "couponCode": "gym",
-      "updoDate": "2023-05-04",
-      "id": 13
-    }
-  ],
-  "braidPonyAptt": [
-    {
-      "firstName": "vaschell",
-      "lastName": "mckenzie",
-      "email": "mvaschell@gmail.com",
-      "phoneNum": "888-888-8888",
-      "couponCode": "TAKE$25",
-      "updoDate": "May 15, 2023",
-      "id": 1
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "phoneNum": "",
-      "couponCode": "",
-      "updoDate": "",
-      "id": 2
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "678987654",
-      "couponCode": "gif gn",
-      "updoDate": "2023-05-18",
-      "id": 3
-    },
-    {
-      "firstName": "jo",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "876687",
-      "couponCode": "jhvhj",
-      "updoDate": "2023-05-18",
-      "id": 4
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "8636516752",
-      "couponCode": "rfgn",
-      "updoDate": "2023-05-09",
-      "id": 5
-    }
-  ],
-  "heartBunAptt": [
-    {
-      "firstName": "vaschell",
-      "lastName": "mckenzie",
-      "email": "mvaschell@gmail.com",
-      "phoneNum": "888-888-8888",
-      "couponCode": "TAKE$25",
-      "updoDate": "May 15, 2023",
-      "id": 1
-    }
-  ],
-  "pigTailsAptt": [
-    {
-      "firstName": "vaschell",
-      "lastName": "mckenzie",
-      "email": "mvaschell@gmail.com",
-      "phoneNum": "888-888-8888",
-      "couponCode": "TAKE$25",
-      "updoDate": "May 15, 2023",
-      "id": 1
-    },
-    {
-      "firstName": "Vaschell",
-      "lastName": "Mckenzie",
-      "email": "vaschellmckenzielove@gmail.com",
-      "phoneNum": "vaschellmckenzielove@gmail.com",
-      "couponCode": "TAKE25",
-      "pigTailDate": "2023-05-17",
-      "id": 2
     }
   ]
 }
