@@ -27,6 +27,9 @@ addEventListener(`DOMContentLoaded`, () => {
             "aptdate" : aptDate
            }
            console.log(userInput)
+           if(userInput.couponCode !== "TAKE25"){
+            alert("Incorrect Coupon Code")
+        }
      }
 
     let allforms = document.getElementsByTagName("form") //grabs all of the forms ofn the webpage
